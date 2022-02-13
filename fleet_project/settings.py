@@ -28,8 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    #'fleet-id.herokuapp.com',
-    '127.0.0.1',
+    'fleet.pythonanywhere.com',
 ]
 
 
