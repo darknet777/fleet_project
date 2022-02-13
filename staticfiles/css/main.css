@@ -123,7 +123,7 @@ button {
     .fleet-header h1 {
         font-size: 2rem;
     }
-    
+  
     .fleet-header span {
         font-size: 1rem;
     }
@@ -134,14 +134,14 @@ button {
         background-color: transparent;
         border-bottom: .25rem solid transparent;
     }
-    
+  
     #custom-nav .nav-link:hover,
     #custom-nav .nav-link:focus {
         color: rgba(0, 0, 0, 0.5);
         border-bottom-color: rgb(255, 0, 0);
         transition: 1s;
     }
-    
+  
     #custom-nav .nav-link + .nav-link {
         margin-left: 1rem;
     }
