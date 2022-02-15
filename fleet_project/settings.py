@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'fleet.pythonanywhere.com',
+    '127.0.0.1',
 ]
 
 
