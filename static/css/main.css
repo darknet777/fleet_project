@@ -40,81 +40,107 @@ button {
 
 /* Carousel base class */
 .carousel {
+    max-width: auto;
     margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-    height: 32rem;
-}
+/* MARKETING CONTENT
+-------------------------------------------------- */
 
-.carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-    filter: blur(2px) brightness(50%);
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+.marketing h2 {
+    font-weight: 400;
 }
-
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-    }
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
 }
+/* rtl:end:ignore */
 
 /*
-* Dummy devices (replace them with your own or something else entirely!)
+* Social media button styling
 */
 
-.product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -30%;
-    width: 300px;
-    height: 540px;
-    background-color: #333;
-    border-radius: 21px;
-    transform: rotate(30deg);
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
 }
 
-.product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 5px;
+.fa:hover {
+    opacity: 0.7;
 }
 
-.product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
+.fa-facebook {
+    background: #3B5998;
+    color: white;
 }
 
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
 
 /*
 * Extra utilities
 */
 
+/* Mobile mode */
+@media only screen and (max-width: 767px) {
+    .carousel-caption {
+        font-size: 14px;
+        bottom: 1rem;
+        z-index: 10;
+    }
+
+    .carousel-caption > h1 {
+        font-size: 24px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .carousel-item {
+        height: 17rem;
+    }
+
+    .carousel-item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        height: 17rem;
+        filter: blur(1px) brightness(50%);
+    }
+}
+
+/* Desktop mode */
 @media only screen and (min-width: 768px) {
     .fleet-header img {
         max-width: 70px;
@@ -145,14 +171,39 @@ button {
     #custom-nav .nav-link + .nav-link {
         margin-left: 1rem;
     }
+    
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+    }
+    
+    /* Declare heights because of positioning of img element */
+    .carousel-item {
+        height: 32rem;
+    }
+    
+    .carousel-item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 32rem;
+        filter: blur(1px) brightness(50%);
+    }
 }
 
-.flex-equal > * {
-    flex: 1;
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
+
 @media (min-width: 768px) {
-    .flex-md-equal > * {
-    flex: 1;
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
     }
 }
 
